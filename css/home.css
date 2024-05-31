@@ -1,21 +1,22 @@
 /* Header */
-header {
+header{
     display: flex;
     justify-content: center;
     background-color: #2a2a2a;
+    height: 700px;
 }
 
 .header-container {
     position: relative;
-    width: 90%;
-    height: 1400px;
+    width: calc(0.9*1519px);
+    min-height: 700px;
 }
 
 .main-content {
     position: absolute;
-    z-index: 1;
     top: 12%;
     left: 8%;
+    z-index: 1;
     color: #fff;
 }
 
@@ -46,15 +47,25 @@ header {
     align-items: center;
 }
 
+.button:hover {
+    width: calc(0.96*200px);
+    height: calc(0.88*60px);
+    margin: 55px 0 52px 3px;
+}
+
 .btn-link {
-    width: 96%;
-    height: 88%;
+    width: calc(0.96*200px);
+    height: calc(0.88*60px);
+    line-height: calc(0.88*60px);
     background-color: #2a2a2a;
-    text-align: center;
-    line-height: calc(0.8*60px);
     color: #fff;
+    text-align: center;
     font-size: 0.8rem;
     font-weight: 700;
+}
+
+.btn-link:hover {
+    background-color: #3d3d3d;
 }
 
 .main-image {
@@ -72,15 +83,157 @@ header {
 
 .main-image img {
     width: 683px;
-    height: 750px;
+    height: 700px;
     opacity: 0.5;
 }
 
 .second-image img {
     width: 684px;
-    height: 750px;
+    height: 700px;
     opacity: 0.5;
 }
 
+/* Additional Header Stylign */
+
+.additional-styling{
+    display: flex;
+    width: calc(0.9*1519px);
+    margin: 0 auto;
+    background-color: #2a2a2a;
+}
+
+.additional-styling img:first-of-type {
+    width: 683px;
+    height: 115px;
+    opacity: 0.5;
+}
+
+.additional-styling img:last-of-type {
+    width: 684px;
+    height: 115px;
+    opacity: 0.5;
+}
+
+/* About Us Cards */
+
+.about-us {
+    margin-bottom: 150px;
+}
+
+.card-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 30px;
+    text-align: center;
+    position: relative;
+    top: -150px;
+}
+
+.card-container .card {
+    padding: 60px 30px;
+    width: calc(100%/3);
+    height: 250px;
+    background-color: #fff;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.card-container .card i {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+.card-container .card h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.card-container .card p {
+    font-size: 1.1em;
+    font-weight: 100;
+    color: #838383;
+}
+
+.about-main {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 80px;
+}
+
+.about-main .images{
+    position: relative;
+    width: 619px;
+}
+
+.about-main .images img:first-child {
+    width: 471.96px;
+    height: 438.69px;
+    position: relative;
+    z-index: 0;
+}
+
+.about-main .images img:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    z-index: 1;
+}
+
+.about-main .text {
+    width: 450px;
+}
+
+.text h2 {
+    font-weight: 500;
+    color: rgb(133, 133, 133);
+}
+
+.text h3 {
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.text p:first-of-type {
+    font-size: 1.3em;
+    color: rgb(133, 133, 133);
+}
+
+.text p:last-of-type {
+    font-size: 1.05em;
+    color: rgb(133, 133, 133);
+}
+
+
+/* Product Listing Images */
+.product-container {
+    display: flex;
+    justify-content: center;
+    margin: 150px 0;
+}
+.product-container .product-listing {
+    width: 90%;
+    margin-left: 40px;
+    padding: 0;
+}
+
+.product-listing img:first-of-type {
+    width: 661.3px;
+    height: 293px;
+}
+
+.product-listing img:nth-of-type(2),
+.product-listing img:nth-of-type(3),
+.product-listing img:nth-of-type(4),
+.product-listing img:nth-of-type(5) {
+    width: 330.65px;
+    height: 293.23px;
+}
+
+.product-listing img:last-of-type {
+    width: 661.3px;
+    height: 293.61px;
+}
 
 
