@@ -82,6 +82,8 @@ nav ul {
 footer {
     background-color: #2a2a2a;
     color: #fff;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .container {
