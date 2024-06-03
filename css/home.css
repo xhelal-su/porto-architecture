@@ -6,7 +6,7 @@ header{
     height: 700px;
 }
 
-.header-container {
+.home-header {
     position: relative;
     width: calc(0.9*1519px);
     min-height: 700px;
@@ -14,7 +14,7 @@ header{
 
 .main-content {
     position: absolute;
-    top: 12%;
+    top: 25%;
     left: 8%;
     z-index: 1;
     color: #fff;
@@ -39,7 +39,7 @@ header{
 
 .button {
     margin: 50px 0;
-    border: 2px solid #2a2a2a;
+    border: 1px solid #2a2a2a;
     width: 200px;
     height: 60px;
     display: flex;
@@ -117,7 +117,7 @@ header{
 /* About Us Cards */
 
 .about-us {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .card-container {
@@ -130,28 +130,37 @@ header{
     top: -150px;
 }
 
-.card-container .card {
-    padding: 60px 30px;
+.card {
+    padding: 40px 30px 60px 30px;
     width: calc(100%/3);
     height: 250px;
     background-color: #fff;
     border: 1px solid rgb(228, 228, 228);
 }
 
-.card-container .card i {
-    font-size: 3rem;
-    margin: 20px;
+.card:hover {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #2a2a2a;
 }
 
-.card-container .card h4 {
+.card i {
+    font-size: 3rem;
+    margin: 15px;
+}
+
+.card h4 {
     font-size: 1.5em;
     font-weight: 600;
 }
 
-.card-container .card p {
-    font-size: 1.1em;
+.card p {
+    font-size: 0.95em;
     font-weight: 100;
-    color: #838383;
+    color: #989898;
+    line-height: 2em;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .about-main {
@@ -162,26 +171,26 @@ header{
     gap: 80px;
 }
 
-.about-main .images{
+.images{
     position: relative;
     width: 619px;
 }
 
-.about-main .images img:first-child {
+.images img:first-child {
     width: 471.96px;
     height: 438.69px;
     position: relative;
     z-index: 0;
 }
 
-.about-main .images img:last-child {
+.images img:last-child {
     position: absolute;
     bottom: 0;
     right: 60px;
     z-index: 1;
 }
 
-.about-main .text {
+.text {
     width: 450px;
 }
 
@@ -205,35 +214,171 @@ header{
     color: rgb(133, 133, 133);
 }
 
-
-/* Product Listing Images */
-.product-container {
+/* project Listing Images */
+.project-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 150px 0;
+    align-items: center;
+    margin: 100px 0;
 }
-.product-container .product-listing {
+
+.project-container h2 {
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.project-listing {
     width: 90%;
     margin-left: 40px;
     padding: 0;
 }
 
-.product-listing img:first-of-type {
+.project-listing div {
+    display: inline-block;
+}
+
+.project-corner,
+.project {
+    background-color: #000;
+    position: relative;
+}
+
+.project-corner,
+.project-corner img,
+.project-corner div {
     width: 661.3px;
     height: 293px;
 }
 
-.product-listing img:nth-of-type(2),
-.product-listing img:nth-of-type(3),
-.product-listing img:nth-of-type(4),
-.product-listing img:nth-of-type(5) {
+.project,
+.project img,
+.project div {
     width: 330.65px;
     height: 293.23px;
 }
 
-.product-listing img:last-of-type {
-    width: 661.3px;
-    height: 293.61px;
+.project-corner div,
+.project div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
 }
 
+.project-corner img:hover,
+.project img:hover {
+    opacity: 0.4;
+}
+
+.project-corner div:hover,
+.project div:hover {
+    display: block;
+}
+
+/* Team Listing */
+.team-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    gap: 40px;
+}
+
+.team-cards {
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.team-card {
+    width: 362px;
+    border: 1px solid rgb(240, 240, 240);
+}
+
+.team-card img {
+    width: 362px;;
+    height: 234px;
+}
+
+.member-text {
+    padding: 10px 20px;
+}
+
+.member-text h3{
+    margin: 5px;
+    font-weight: 900;
+}
+
+.member-text h4 {
+    margin: 5px;
+    color: gray;
+    font-weight: 300;
+    font-size: 1.05em;
+}
+
+.member-text p {
+    margin: 15px 0;
+    padding: 10px;
+    color: rgb(169, 169, 169);
+}
+
+.team-text {
+    width: 30%;
+    position: relative;
+    align-self: flex-start;
+}
+
+.team-text .text{
+    width: 100%;
+    text-align: right;
+}
+
+.team-text .button {
+    position: absolute;
+    bottom: -130px;
+    right: 0;
+}
+
+/* Contact Container */
+.contact-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a2a2a;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.contact-text {
+    align-self: center;
+    margin-left: 10px;
+}
+
+.contact-text h2 {
+    color: rgb(138, 138, 138);
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.contact-text h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+.contact-container .button {
+    border-color: #fff;
+    margin-right: 10px;
+}
+
+.contact-container .btn-link {
+    background-color: #fff;
+    color: #2a2a2a;
+}
 

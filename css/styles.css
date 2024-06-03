@@ -86,37 +86,38 @@ footer {
     overflow-x: hidden;
 }
 
-.container {
+.footer-container {
     display: flex;
     width: 100%;
     padding: 80px 50px;
 }
 
-.container .col {
+.footer-container .col {
     width: calc(100%/6.3);
 }
 
-.container h4 {
+.footer-container h4 {
     font-size: 1.2rem;
 }
 
-.container li, .container a {
+.footer-container li, 
+.footer-container a {
     color: #999;
     font-size: .85rem;
     margin: 5px 0;
 }
 
-.container .tel a {
+.footer-container .tel a {
     color: #fff;
     font-size: 1.4rem;
     font-weight: 900;
 }
 
-.container .col:last-child ul{
+.footer-container .col:last-child ul{
     display: flex;
 }
 
-.container .col:last-child ul li a {
+.footer-container .col:last-child ul li a {
     margin: 0 10px;
     color: #fff;
 }
